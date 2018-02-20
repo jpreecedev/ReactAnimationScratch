@@ -23,12 +23,12 @@
 	<title>React App</title>
 
   <style>
-.timeslot { height: 0; overflow: hidden; } .timeslot-container-false { height: 0; } .timeslot-container-true { height: 309px;
-} .timeslot-enter { height: 0; } .timeslot-enter.timeslot-enter-active { height: 309px; transition: height 0.5s cubic-bezier(0.19,
-1, 0.22, 1); } .timeslot-enter.timeslot-enter-active .timeslot-container { transition: all 0.3s ease-in; } .timeslot-leave
-{ height: 309px; } .timeslot-leave.timeslot-leave-active { height: 0; transition: height 0.2s cubic-bezier(0.445, 0.05, 0.55,
-0.95); } .timeslot-leave.timeslot-leave-active .timeslot-container { transition: all 0.1s ease-out; }
-  </style>
+.timeslot-enter { height: 0; opacity: 0.01; } .timeslot-enter .timeslot-container { opacity: 0; } .timeslot-enter.timeslot-enter-active
+{ height: auto; opacity: 1; transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s cubic-bezier(0.19, 1, 0.22,
+1); } .timeslot-enter.timeslot-enter-active .timeslot-container { opacity: 1; transition: all 0.3s ease-in; } .timeslot-leave.timeslot-leave-active
+{ height: 0; opacity: 0.01; transition: height 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 0.6s ease-out; } .timeslot-leave.timeslot-leave-active
+.timeslot-container { opacity: 0.01; transition: all 0.1s ease-out; }
+</style>
 </head>
 
 <body>
