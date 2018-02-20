@@ -1,2 +1,0 @@
-# ReactAnimationScratch
-Created with CodeSandbox
